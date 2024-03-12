@@ -7,6 +7,14 @@ The successful application of semantic segmentation to radio frequency (RF) spec
 for [spectrum sensing](https://iopscience.iop.org/article/10.1088/1742-6596/2261/1/012016#:~:text=In%20cognitive%20radio%2C%20spectrum%20sensing,user%20can%20use%20the%20spectrum.) and serves as a foundational example showcasing the near-term feasibility of 
 [intelligent radio](https://www.qoherent.ai/intelligentradio/) technology.
 
+Qoherent's mission to drive the creation of intelligent radio technology requires a combination of open-source and 
+proprietary tools. This example, which leverages open-source tools and machine learning frameworks to train on 
+synthetic radio data generated with MATLAB, showcases our commitment to interoperability and our tool-agnostic approach to innovation.
+
+Classification results are comparable to those reported by MathWorks' AI-based network. For more information, 
+please refer to the following MathWorks' article: 
+[Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html).
+
 If you found this example interesting or helpful, don't forget to give it a star! ⭐ Also, be sure to check out our 
 open-source project: [RIA Core](https://github.com/qoherent/ria).
 
@@ -110,12 +118,13 @@ example and prepared the repository for sharing.
 
 ## 🙏 Attribution
 
-This project was inspired by MathWorks' article on 
-[Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html).
-
 The dataset used in this example was prepared by MathWorks and is publicly available [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information 
 on how the dataset was generated or to generate further spectrum data, please refer to the aforementioned MathWork's 
-article on Spectrum Sensing.
+article on Spectrum Sensing. For more information about our use of MATLAB to accelerate intelligent radio research or our investigation into 
+tooling interoperability, please refer to this [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
+
+A Special thanks to the PyTorch and PyTorch Lightning teams for providing the foundational frameworks used in 
+this project.
 
 The DeepLabv3 models employed in this example were initially proposed by Chen _et al._ and are further discussed 
 in their 2017 paper titled '[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)'. DeepLabv3
