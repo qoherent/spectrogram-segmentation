@@ -39,37 +39,48 @@ https://github.com/qoherent/spectrogram-segmentation.git
 ```commandline
 conda env create -f environment.yml
 ```
-This will create a new Conda environment ...
+This will create a new Conda environment named `spectrogram-segmentation` within the Conda installation directory.
 
 
-4. Active the environment, and download the spectrum sensing dataset:
+4. Active the environment:
 ```commandline
-conda activate my_environment
+conda activate spectrogram-segmentation
+```
+
+
+5. Download the spectrum sensing dataset:
+```commandline
 python download_dataset.py
-conda deactivate
 ```
 This will ...
 
 
-5. Add the Conda environment to Jupyter:
+6. Install a new IPython kernel within the `spectrogram-segmentation` environment:
 ```commandline
-python -m ipykernel install --user --name=spectrogram-segmentation
+ipython kernel install --user --name=spectrogram-segmentation
 ```
 
 
-5. Open the spectrogram segmentation notebook:
+6. Open the notebook, `spectrogram_segmentation.ipynb`, specifying to use the `spectrogram-segmentation` kernel:
 ```commandline
-jupyter notebook spectrogram-segmentation.ipynb
+jupyter notebook spectrogram_segmentation.ipynb --MultiKernelManager.default_kernel_name=spectrogram-segmentation
 ```
 
 
-6. Give yourself a pat on the back - you're all set up and ready to run the example! For more information on 
+7. Give yourself a pat on the back - you're all set up and ready to explore the example! For more information on 
 navigating the Jupyter Notebook interface and executing code, please check out this tutorial by the Codecademy 
 Team: [How To Use Jupyter Notebooks](https://www.codecademy.com/article/how-to-use-jupyter-notebooks).
 
 Depending on your system specifications and the availability of a CUDA, running this example locally may take 
 several minutes. If a cell is taking too long to execute, you can interrupt its execution by clicking the "Kernel" 
 menu and selecting "Interrupt Kernel" or by pressing `Ctrl + C` in the terminal where Jupyter notebook is running.
+
+
+8. After you finish exploring, consider removing the sensing dataset from your system and deleting the Conda 
+environment to free up space. You can delete the Conda environment using:
+```commandline
+conda env remove --name spectrogram-segmentation
+```
 
 ### 📓 Running this example in Google Colab
 
@@ -80,22 +91,32 @@ We've shared the notebook on Google Colab: [Spectrogram Segmentation]().
 ## 🤝 Contribution
 
 We welcome contributions from the community! Whether it's an enhancement, bug fix, or improved explanation, 
-your input is valuable. For larger changes, please contact us via email at [info@qoherent.ai](mailto:info@qoherent.ai) beforehand.
+your input is valuable. For significant changes or to include another similar example, kindly [contact us](mailto:info@qoherent.ai)
+beforehand.
 
-If you encounter any issues or to report a security vulnerability, please submit a bug report to the GitHub Issues page
-[here](https://github.com/qoherent/spectrogram-segmentation/issues).
+If you encounter any issues or to report a security vulnerability, please submit a bug report to the GitHub Issues 
+page [here](https://github.com/qoherent/spectrogram-segmentation/issues).
 
-Has this example inspired a project or reserach initive? 
+Has this example inspired a radio project or research initiative? Please [get in touch](mailto:info@qoherent.ai); we'd love to 
+collaborate with you! 📡🚀
 
 
-## 📜 Attribution
+## 🖊️ Authorship
 
-This project was inspired by [Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html) by MathWork's.
+This work is a product of the collaborative efforts of the Qoherent team. Of special mention are [Wan](https://github.com/wan-sdr), 
+who led the initial research and prototyping effort, and [Michael](https://github.com/mrl280), who clean up the 
+example and prepared the repository for sharing.
+
+
+## 🙏 Attribution
+
+This project was inspired by MathWorks' article on 
+[Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html).
 
 The dataset used in this example was prepared by MathWorks and is publicly available [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information 
-on how the dataset was generated or to generate further data, please refer to the aforementioned MathWork's article 
-on Spectrum Sensing.
+on how the dataset was generated or to generate further spectrum data, please refer to the aforementioned MathWork's 
+article on Spectrum Sensing.
 
-The models employed in this example were initially proposed by Chen _et al._ in their 2017 paper titled
-'[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)' and accessed 
-through [`torchvision`](https://pytorch.org/vision/stable/models/deeplabv3.html).
+The DeepLabv3 models employed in this example were initially proposed by Chen _et al._ and are further discussed 
+in their 2017 paper titled '[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)'. DeepLabv3
+models were accessed through [`torchvision`](https://pytorch.org/vision/stable/models/deeplabv3.html).
