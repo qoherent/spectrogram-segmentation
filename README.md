@@ -9,7 +9,8 @@ for [spectrum sensing](https://iopscience.iop.org/article/10.1088/1742-6596/2261
 
 Qoherent's mission to drive the creation of intelligent radio technology requires a combination of open-source and 
 proprietary tools. This example, which leverages open-source tools and machine learning frameworks to train on 
-synthetic radio data generated with MATLAB, showcases our commitment to interoperability and our tool-agnostic approach to innovation.
+synthetic radio data generated using MATLAB, showcases our commitment to interoperability and our tool-agnostic 
+approach to innovation.
 
 Classification results are comparable to those reported by MathWorks' AI-based network. For more information, 
 please refer to the following MathWorks' article: 
@@ -56,11 +57,12 @@ conda activate spectrogram-segmentation
 ```
 
 
-5. Download the spectrum sensing dataset:
+5. Download and unpack the spectrum sensing dataset:
 ```commandline
 python download_dataset.py
 ```
-This will ...
+This command will create a new directory named `SpectrumSensingDataset` at the project's root. The 
+MathWorks' Spectrum Sensing 5G dataset will be downloaded and unpacked into this directory.
 
 
 6. Install a new IPython kernel within the `spectrogram-segmentation` environment:
@@ -69,13 +71,13 @@ ipython kernel install --user --name=spectrogram-segmentation
 ```
 
 
-6. Open the notebook, `spectrogram_segmentation.ipynb`, specifying to use the `spectrogram-segmentation` kernel:
+7. Open the notebook, `spectrogram_segmentation.ipynb`, specifying to use the `spectrogram-segmentation` kernel:
 ```commandline
 jupyter notebook spectrogram_segmentation.ipynb --MultiKernelManager.default_kernel_name=spectrogram-segmentation
 ```
 
 
-7. Give yourself a pat on the back - you're all set up and ready to explore the example! For more information on 
+8. Give yourself a pat on the back - you're all set up and ready to explore the example! For more information on 
 navigating the Jupyter Notebook interface and executing code, please check out this tutorial by the Codecademy 
 Team: [How To Use Jupyter Notebooks](https://www.codecademy.com/article/how-to-use-jupyter-notebooks).
 
@@ -84,7 +86,7 @@ several minutes. If a cell is taking too long to execute, you can interrupt its 
 menu and selecting "Interrupt Kernel" or by pressing `Ctrl + C` in the terminal where Jupyter notebook is running.
 
 
-8. After you finish exploring, consider removing the sensing dataset from your system and deleting the Conda 
+9. After you finish exploring, consider removing the sensing dataset from your system and deleting the Conda 
 environment to free up space. You can delete the Conda environment using:
 ```commandline
 conda env remove --name spectrogram-segmentation
@@ -120,8 +122,8 @@ example and prepared the repository for sharing.
 
 The dataset used in this example was prepared by MathWorks and is publicly available [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information 
 on how the dataset was generated or to generate further spectrum data, please refer to the aforementioned MathWork's 
-article on Spectrum Sensing. For more information about our use of MATLAB to accelerate intelligent radio research or our investigation into 
-tooling interoperability, please refer to this [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
+article on Spectrum Sensing. For more information about our use of MATLAB to accelerate intelligent radio research, 
+please refer to this [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
 
 A Special thanks to the PyTorch and PyTorch Lightning teams for providing the foundational frameworks used in 
 this project.
