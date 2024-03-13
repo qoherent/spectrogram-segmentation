@@ -1,6 +1,6 @@
 # Spectrogram Segmentation
 
-In this example, we use [PyTorch](https://pytorch.org/) and [PyTorch Lightening](https://lightning.ai/docs/pytorch/stable/) to train DeepLabV3 segmentation models to differentiate between 
+In this example, we use [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) to train DeepLabV3 segmentation models to differentiate between 
 5G NR and 4G LTE signals within wideband spectrograms.
 
 The successful application of semantic segmentation to radio frequency (RF) spectrograms holds significant applications 
@@ -120,13 +120,13 @@ example and prepared the repository for sharing.
 
 ## 🙏 Attribution
 
-The dataset used in this example was prepared by MathWorks and is publicly available [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information 
-on how the dataset was generated or to generate further spectrum data, please refer to the aforementioned MathWork's 
-article on Spectrum Sensing. For more information about our use of MATLAB to accelerate intelligent radio research, 
-please refer to this [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
+The dataset used in this example was prepared by MathWorks and is publicly available under the MIT license
+[here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information on how the dataset was generated or to generate further spectrum data, please 
+refer to the aforementioned MathWork's article on Spectrum Sensing. For more information about Qoheren's use of 
+MATLAB to accelerate intelligent radio research, check out this [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
 
-A Special thanks to the PyTorch and PyTorch Lightning teams for providing the foundational frameworks used in 
-this project.
+A special thanks to the PyTorch and PyTorch Lightning teams for providing the foundational frameworks used in 
+this example.
 
 The DeepLabv3 models employed in this example were initially proposed by Chen _et al._ and are further discussed 
 in their 2017 paper titled '[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)'. DeepLabv3
