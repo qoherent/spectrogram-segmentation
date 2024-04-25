@@ -21,9 +21,6 @@ jobs:
           with:
             python-version: "3.10"
 
-        - name: isort Import Sorting Check
-          uses: isort/isort-action@master
-
         - name: Back Formatting Check
           uses: psf/black@stable
           with:
@@ -36,3 +33,15 @@ jobs:
 
         - name: Lint with Flake8
           uses: py-actions/flake8@v2
+
+        - name: Install Flake8 for Jupyter Notebooks
+          run: |
+            pip install --upgrade pip
+            pip install flake8-nb
+
+        - name: Run Flake8 for Jupyter Notebooks
+          run: |
+            flake8-nb .
+
+        - name: Ensure Clean Notebooks
+          uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
