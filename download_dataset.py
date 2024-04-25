@@ -1,18 +1,20 @@
 """
 Download MathWorks' Spectrum Sensing 5G dataset, if it isn't already downloaded.
 """
+
 import os
 import tarfile
 import warnings
+
 import requests
-
 from torch.utils.model_zoo import tqdm
-
 
 mirror = "https://www.mathworks.com/supportfiles/spc/SpectrumSensing/"
 resource = "SpectrumSenseTrainingDataNetwork.tar.gz"
 file_url = "{}{}".format(mirror, resource)
-target_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "SpectrumSensingDataset")
+target_dir = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "SpectrumSensingDataset"
+)
 archive_file = os.path.join(target_dir, resource)
 
 # Ensure the target directory exists.
@@ -26,10 +28,13 @@ if len(os.listdir(target_dir)) != 0:
 
 # Download and extract the dataset into the target directory.
 print(f"Downloading {format(file_url)}")
-n_bytes = int(requests.head(file_url).headers.get('Content-Length', 0))
+n_bytes = int(requests.head(file_url).headers.get("Content-Length", 0))
 
-with (requests.get(file_url, stream=True, timeout=3) as r, open(archive_file, 'wb') as out_file,
-      tqdm(desc="Downloading", total=n_bytes, unit='B', unit_scale=True) as pbar):
+with (
+    requests.get(file_url, stream=True, timeout=3) as r,
+    open(archive_file, "wb") as out_file,
+    tqdm(desc="Downloading", total=n_bytes, unit="B", unit_scale=True) as pbar,
+):
     for chunk in r.iter_content(chunk_size=1024):
         if chunk:
             out_file.write(chunk)
