@@ -12,9 +12,7 @@ from torch.utils.model_zoo import tqdm
 mirror = "https://www.mathworks.com/supportfiles/spc/SpectrumSensing/"
 resource = "SpectrumSenseTrainingDataNetwork.tar.gz"
 file_url = "{}{}".format(mirror, resource)
-target_dir = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "SpectrumSensingDataset"
-)
+target_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "SpectrumSensingDataset")
 archive_file = os.path.join(target_dir, resource)
 
 # Ensure the target directory exists.

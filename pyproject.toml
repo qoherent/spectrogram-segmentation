@@ -1,0 +1,18 @@
+[tool.black]
+line-length = 119
+target-version = ["py310"]
+exclude = '''
+    /(
+          \.git
+        | \.github
+        | venv
+        | \.venv
+        | env
+        | \.env
+        | \.idea
+        | \.vscode
+    )/
+'''
+
+[tool.isort]
+profile = "black"
