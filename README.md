@@ -41,7 +41,7 @@ this example. Additionally, if you'd like to accelerate model training with a GP
 
 2. Clone this repository to your local computer:
 ```commandline
-https://github.com/qoherent/spectrogram-segmentation.git
+git clone https://github.com/qoherent/spectrogram-segmentation.git
 ```
 
 
