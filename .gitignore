@@ -5,7 +5,7 @@
 profile_default/
 ipython_config.py
 
-# Environments
+# Virutal environments
 .env
 .venv
 env/
@@ -16,3 +16,6 @@ venv/
 
 # Visual Studio Code specific file
 .vscode/
+
+# Project Dataset
+/SpectrumSensingDataset/
