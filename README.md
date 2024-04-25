@@ -1,11 +1,12 @@
 # Spectrogram Segmentation
 
-In this example, we use [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) to train DeepLabV3 segmentation models to differentiate between 
-5G NR and 4G LTE signals within wideband spectrograms.
-
-The successful application of semantic segmentation to radio frequency (RF) spectrograms holds significant applications 
+The successful application of semantic segmentation to radiofrequency (RF) spectrograms holds significant applications 
 for [spectrum sensing](https://iopscience.iop.org/article/10.1088/1742-6596/2261/1/012016#:~:text=In%20cognitive%20radio%2C%20spectrum%20sensing,user%20can%20use%20the%20spectrum.) and serves as a foundational example showcasing the near-term feasibility of 
 [intelligent radio](https://www.qoherent.ai/intelligentradio/) technology.
+
+In this example, we use [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) to train DeepLabV3 segmentation models to 
+differentiate between 
+5G NR and 4G LTE signals within wideband spectrograms.
 
 Qoherent's mission to drive the creation of intelligent radio technology requires a combination of open-source and 
 proprietary tools. This example, which leverages open-source tools and machine learning frameworks to train on 
@@ -13,7 +14,7 @@ synthetic radio data generated using MATLAB, showcases our commitment to interop
 approach to innovation.
 
 Classification results are comparable to those reported by MathWorks' AI-based network. For more information, 
-please refer to the following MathWorks' article: 
+please refer to the following MathWorks article: 
 [Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html).
 
 If you found this example interesting or helpful, don't forget to give it a star! ⭐ Also, be sure to check out our 
@@ -22,8 +23,8 @@ open-source project: [RIA Core](https://github.com/qoherent/ria).
 
 ## 🚀 Getting Started
 
-This example is provided as a Jupyter Notebook. You have the option to run this example either locally or 
-in Google Colab.
+This example is provided as a Jupyter Notebook. You have the option to either run this example locally or in Google 
+Colab.
 
 To run this example locally, you'll need to download this project, the spectrogram sensing dataset, 
 and set up a Conda virtual environment. If this seems daunting, we recommend running this example on 
@@ -62,7 +63,7 @@ conda activate spectrogram-segmentation
 python download_dataset.py
 ```
 This command will create a new directory named `SpectrumSensingDataset` at the project's root. The 
-MathWorks' Spectrum Sensing 5G dataset will be downloaded and unpacked into this directory.
+MathWorks Spectrum Sensing 5G dataset will be downloaded and unpacked into this directory.
 
 
 6. Install a new IPython kernel within the `spectrogram-segmentation` environment:
@@ -87,14 +88,14 @@ menu and selecting "Interrupt Kernel" or by pressing `Ctrl + C` in the terminal 
 
 
 9. After you finish exploring, consider removing the sensing dataset from your system and deleting the Conda 
-environment to free up space. You can delete the Conda environment using:
+environment to free up space. You can delete the Conda environment using the following command:
 ```commandline
 conda env remove --name spectrogram-segmentation
 ```
 
-### 📓 Running this example in Google Colab
+### Running this example in Google Colab
 
-Coming soon: Don't want the hassle of downloading the project, dataset, and setting up a Conda environment? 
+Coming soon: Don't want the hassle of downloading the project and dataset and setting up a Conda environment? 
 We've shared the notebook on Google Colab: [Spectrogram Segmentation]().
 
 
@@ -107,27 +108,27 @@ beforehand.
 If you encounter any issues or to report a security vulnerability, please submit a bug report to the GitHub Issues 
 page [here](https://github.com/qoherent/spectrogram-segmentation/issues).
 
-Has this example inspired a radio project or research initiative? Please [get in touch](mailto:info@qoherent.ai); we'd love to 
-collaborate with you! 📡🚀
+Has this example inspired a project or research initiative related to intelligent radio? Please [get in touch](mailto:info@qoherent.ai); 
+we'd love to collaborate with you! 📡🚀
 
 
 ## 🖊️ Authorship
 
-This work is a product of the collaborative efforts of the Qoherent team. Of special mention are [Wan](https://github.com/wan-sdr), 
-who led the initial research and prototyping effort, and [Michael](https://github.com/mrl280), who clean up the 
-example and prepared the repository for sharing.
+This work is a product of the collaborative efforts of the Qoherent team. Of special mention are [Wan](https://github.com/wan-sdr), who led 
+the initial research and prototyping effort, and [Michael](https://github.com/mrl280), who cleaned up the example and prepared the repository
+for sharing.
 
 
 ## 🙏 Attribution
 
 The dataset used in this example was prepared by MathWorks and is publicly available under the MIT license
 [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information on how the dataset was generated or to generate further spectrum data, please 
-refer to the aforementioned MathWork's article on Spectrum Sensing. For more information about Qoheren's use of 
-MATLAB to accelerate intelligent radio research, check out this [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
+refer to the aforementioned MathWork's article on Spectrum Sensing. For more information about Qoherent's use of 
+MATLAB to accelerate intelligent radio research, check out our [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
 
 A special thanks to the PyTorch and PyTorch Lightning teams for providing the foundational frameworks used in 
 this example.
 
 The DeepLabv3 models employed in this example were initially proposed by Chen _et al._ and are further discussed 
-in their 2017 paper titled '[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)'. DeepLabv3
-models were accessed through [`torchvision`](https://pytorch.org/vision/stable/models/deeplabv3.html).
+in their 2017 paper titled '[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)'. DeepLabv3 models 
+were accessed through [`torchvision`](https://pytorch.org/vision/stable/models/deeplabv3.html).
