@@ -29,6 +29,7 @@ jobs:
           with:
             options: "--check --verbose"
             src: "./"
+            jupyter: true
 
         - name: Setup Flake8 Annotations
           uses: rbialon/flake8-annotations@v1.1
