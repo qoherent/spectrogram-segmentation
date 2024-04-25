@@ -1,0 +1,37 @@
+name: Lint and Format Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  lint-and-format-check:
+    runs-on: ubuntu-latest
+    name: Lint and Format Checks
+    steps:
+        - name: Check out
+          uses: actions/checkout@v4
+
+        - name: Set up Python environment
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.10"
+
+        - name: isort Import Sorting Check
+          uses: isort/isort-action@master
+
+        - name: Back Formatting Check
+          uses: psf/black@stable
+          with:
+            options: "--check --verbose"
+            src: "./"
+
+        - name: Setup Flake8 Annotations
+          uses: rbialon/flake8-annotations@v1.1
+
+        - name: Lint with Flake8
+          uses: py-actions/flake8@v2
