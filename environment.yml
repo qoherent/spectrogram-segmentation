@@ -6,6 +6,7 @@ channels:
   - defaults
 dependencies:
   - python=3.11
+  - pip=23.3.*
   - jupyter=1.0.0  # Jupyter system, including the notebook and the IPython kernel, all in one go.
   - numpy=1.26.*
   - pandas=2.2.*
