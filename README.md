@@ -4,9 +4,8 @@ The successful application of semantic segmentation to radiofrequency (RF) spect
 for [spectrum sensing](https://iopscience.iop.org/article/10.1088/1742-6596/2261/1/012016#:~:text=In%20cognitive%20radio%2C%20spectrum%20sensing,user%20can%20use%20the%20spectrum.) and serves as a foundational example showcasing the near-term feasibility of 
 [intelligent radio](https://www.qoherent.ai/intelligentradio/) technology.
 
-In this example, we use [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) to train DeepLabV3 segmentation models to 
-differentiate between 
-5G NR and 4G LTE signals within wideband spectrograms.
+In this example, we use [PyTorch](https://pytorch.org/) and [Lightning](https://lightning.ai/docs/pytorch/stable/) to train DeepLabV3 segmentation models to 
+differentiate between 5G NR and 4G LTE signals within wideband spectrograms.
 
 Qoherent's mission to drive the creation of intelligent radio technology requires a combination of open-source and 
 proprietary tools. This example, which leverages open-source tools and machine learning frameworks to train on 
@@ -14,7 +13,7 @@ synthetic radio data generated using MATLAB, showcases our commitment to interop
 approach to innovation.
 
 Classification results are comparable to those reported by MathWorks' AI-based network. For more information, 
-please refer to the following MathWorks article: 
+please refer to the following MathWorks article:
 [Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html).
 
 If you found this example interesting or helpful, don't forget to give it a star! ⭐ Also, be sure to check out our 
@@ -126,7 +125,7 @@ The dataset used in this example was prepared by MathWorks and is publicly avail
 refer to the aforementioned MathWork's article on Spectrum Sensing. For more information about Qoherent's use of 
 MATLAB to accelerate intelligent radio research, check out our [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
 
-A special thanks to the PyTorch and PyTorch Lightning teams for providing the foundational frameworks used in 
+A special thanks to the PyTorch and Lightning teams for providing the foundational machine learning frameworks used in 
 this example.
 
 The DeepLabv3 models employed in this example were initially proposed by Chen _et al._ and are further discussed 
