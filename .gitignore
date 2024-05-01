@@ -22,5 +22,6 @@ venv/
 # Visual Studio Code specific file
 .vscode/
 
-# Project Dataset
+# Project Related Files
 /SpectrumSensingDataset/
+/lightning_logs/
