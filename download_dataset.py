@@ -1,5 +1,5 @@
 """
-Download MathWorks' Spectrum Sensing 5G dataset, if it isn't already downloaded.
+Download MathWorks' Spectrum Sensing dataset, if it isn't already downloaded.
 """
 
 import os
