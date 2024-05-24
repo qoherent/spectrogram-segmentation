@@ -13,11 +13,10 @@ synthetic radio data generated using MATLAB, showcases our commitment to interop
 approach to innovation.
 
 Classification results are comparable to those reported by MathWorks' AI-based network. For more information, 
-please refer to the following MathWorks article:
+please refer to the following article by MathWorks:
 [Spectrum Sensing with Deep Learning to Identify 5G and LTE Signals](https://www.mathworks.com/help/comm/ug/spectrum-sensing-with-deep-learning-to-identify-5g-and-lte-signals.html).
 
-If you found this example interesting or helpful, don't forget to give it a star! ⭐ Also, be sure to check out our 
-open-source project: [RIA Core](https://github.com/qoherent/ria).
+If you found this example interesting or helpful, don't forget to give it a star! ⭐
 
 
 ## 🚀 Getting Started
@@ -25,7 +24,7 @@ open-source project: [RIA Core](https://github.com/qoherent/ria).
 This example is provided as a Jupyter Notebook. You have the option to either run this example locally or in Google 
 Colab.
 
-To run this example locally, you'll need to download this project and dataset, and set up a Conda 
+To run this example locally, you'll need to download the project and dataset and set up a Conda 
 virtual environment. If this seems daunting, we recommend running this example on Google Colab.
 
 ### Running this example locally
@@ -33,8 +32,8 @@ virtual environment. If this seems daunting, we recommend running this example o
 Please note that running this example locally will require approximately 10 GB of free space. Please ensure you 
 have sufficient space available prior to proceeding.
 
-1. Ensure that [Python](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads), and [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) are installed on the computer where you plan to run 
-this example. Additionally, if you'd like to accelerate model training with a GPU, you'll require [CUDA](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html).
+1. Ensure that [Git](https://git-scm.com/downloads) and [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) are installed on the computer where you plan to run this example. 
+Additionally, if you'd like to accelerate model training with a GPU, you'll require [CUDA](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html).
 
 
 2. Clone this repository to your local computer:
@@ -109,6 +108,8 @@ page [here](https://github.com/qoherent/spectrogram-segmentation/issues).
 Has this example inspired a project or research initiative related to intelligent radio? Please [get in touch](mailto:info@qoherent.ai); 
 we'd love to collaborate with you! 📡🚀
 
+Finally, be sure to check out our open-source project: [RIA Core](https://github.com/qoherent/ria).
+
 
 ## 🖊️ Authorship
 
@@ -119,10 +120,10 @@ for sharing.
 
 ## 🙏 Attribution
 
-The dataset used in this example was prepared by MathWorks and is publicly available under the MIT license
-[here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information on how this dataset was generated or to generate further spectrum data, please 
-refer to MathWork's article on spectrum sensing. For more information about Qoherent's use of MATLAB to accelerate 
-intelligent radio research, check out our [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
+The dataset used in this example was prepared by MathWorks and is publicly available [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information 
+on how this dataset was generated or to generate further spectrum data, please refer to MathWork's article on spectrum 
+sensing. For more information about Qoherent's use of MATLAB to accelerate intelligent radio research, check out our 
+[customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
 
 The DeepLabv3 models used in this example were initially proposed by Chen _et al._ and are further discussed 
 in their 2017 paper titled '[Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)'. The MobileNetV3 
