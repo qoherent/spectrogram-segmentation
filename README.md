@@ -108,14 +108,13 @@ page [here](https://github.com/qoherent/spectrogram-segmentation/issues).
 Has this example inspired a project or research initiative related to intelligent radio? Please [get in touch](mailto:info@qoherent.ai); 
 we'd love to collaborate with you! 📡🚀
 
-Finally, be sure to check out our open-source project: [RIA Core](https://github.com/qoherent/ria).
+Finally, be sure to check out our open-source project: [RIA Core](https://github.com/qoherent/ria) (Coming soon!).
 
 
 ## 🖊️ Authorship
 
-This work is a product of the collaborative efforts of the Qoherent team. Of special mention are [Wan](https://github.com/wan-sdr), who led 
-the initial research and prototyping effort, and [Michael](https://github.com/mrl280), who cleaned up the example and prepared the repository
-for sharing.
+This work is a product of the collaborative efforts of the Qoherent team. Of special mention are [Wan](https://github.com/wan-sdr), 
+[Madrigal](https://github.com/MadrigalDW), [Dimitrios](https://github.com/DimitriosK), and [Michael](https://github.com/mrl280).
 
 
 ## 🙏 Attribution
