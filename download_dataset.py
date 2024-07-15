@@ -15,7 +15,7 @@ def sha256(target: str) -> str:
     :param target: The full path, including the filename, of the resource to hash.
     :type target: str
 
-    :return: str
+    :return: The SHA256 hash of the target resource.
     """
     sha256_hash = hashlib.sha256()
 
@@ -27,9 +27,9 @@ def sha256(target: str) -> str:
 
 
 mirror = "https://storage.googleapis.com/qoherent_external_drive/general_dataset_library/"
-resource = "SpectrumSensingDataset.hdf5"
+resource = "spectrum_sensing_dataset.hdf5"
 file_url = "{}{}".format(mirror, resource)
-sha256_checksum = "496c354fb842f1f11aa7f46741a2c937063245fc899adad7a83e5f3012e9d6cc"
+sha256_checksum = "3cdb2d61370ea9a1123ac1fc37889d81f0845d7f2827833e007008fd883a5369"
 
 target = os.path.join(os.path.dirname(os.path.abspath(__file__)), "spectrum_sensing_dataset.hdf5")
 
