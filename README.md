@@ -29,10 +29,10 @@ virtual environment. If this seems daunting, we recommend running this example o
 
 ### Running this example locally
 
-Please note that running this example locally will require approximately 10 GB of free space. Please ensure you 
+Please note that running this example locally will require approximately 3.5 GB of free space. Please ensure you 
 have sufficient space available prior to proceeding.
 
-1. Ensure that [Git](https://git-scm.com/downloads) and [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) are installed on the computer where you plan to run this example. 
+1. Ensure that [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/) are installed on the computer where you plan to run this example. 
 Additionally, if you'd like to accelerate model training with a GPU, you'll require [CUDA](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html).
 
 
@@ -42,25 +42,69 @@ git clone https://github.com/qoherent/spectrogram-segmentation.git
 ```
 
 
-3. Create a Conda environment using the provided `environment.yml` file:
-```commandline
-conda env create -f environment.yml
-```
-This will create a new Conda environment named `spectrogram-segmentation` within the Conda installation directory.
+3. Create and activate a [virtual environment](https://docs.python.org/3/library/venv.html). This is a best practice for isolating project dependencies.
 
+<details>
+<summary><strong>Windows</strong></summary>
 
-4. Active the environment:
+Use the following command to create a new directory named `venv` within the current working directory:
 ```commandline
-conda activate spectrogram-segmentation
+python -m venv venv
 ```
 
+Then, activate the virtual environment with:
+```commandline
+venv\Scripts\activate
+```
 
-5. Download and unpack the spectrum sensing dataset:
+</details>
+
+<details>
+<summary><strong>Linux/Mac</strong></summary>
+
+Use the following command to create a new directory named `venv` within the current working directory:
+```commandline
+python3 -m venv venv
+```
+
+Then, activate the virtual environment with:
+```commandline
+source venv/bin/activate
+```
+
+</details>
+
+Activating the virtual environment should modify the command prompt to show `(venv)` at the beginning, indicating 
+that the virtual environment is active.
+
+
+4. Install project dependencies from the provided `requirements.txt` file:
+```commandline
+pip install -r requirements.txt
+```
+
+
+5. Download the spectrum sensing dataset.
+
+<details>
+<summary><strong>Windows</strong></summary>
+
 ```commandline
 python download_dataset.py
 ```
-This command will create a new directory named `SpectrumSensingDataset` at the project's root. The 
-MathWorks Spectrum Sensing dataset will be downloaded and unpacked into this directory automatically.
+
+</details>
+
+<details>
+<summary><strong>Linux/Mac</strong></summary>
+
+```commandline
+python3 download_dataset.py
+```
+
+</details>
+
+This will download the `spectrum_sensing_dataset.hdf5` source file to the project's root directory.
 
 
 6. Register the environment kernel with Jupyter:
@@ -84,11 +128,8 @@ several minutes. If a cell is taking too long to execute, you can interrupt its 
 menu and selecting "Interrupt Kernel" or by pressing `Ctrl + C` in the terminal where Jupyter Notebook is running.
 
 
-9. After you finish exploring, consider removing the dataset from your system and deleting the Conda environment to 
-free up space. You can delete the Conda environment using the following command:
-```commandline
-conda env remove --name spectrogram-segmentation
-```
+9. After you finish exploring, consider removing the dataset from your system and deleting the virtual environment to 
+free up space. Remember to deactivate the virtual environment using the deactivate command before deleting the folder.
 
 ### Running this example in Google Colab
 
