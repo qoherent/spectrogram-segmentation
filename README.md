@@ -9,7 +9,7 @@ differentiate between 5G NR and 4G LTE signals within wideband spectrograms.
 
 Qoherent's mission to drive the creation of intelligent radio technology requires a combination of open-source and 
 proprietary tools. This example, which leverages open-source tools and machine learning frameworks to train on 
-synthetic radio data generated using MATLAB's powerful 5G and LTE Toolboxes, showcases our commitment to
+synthetic radio data generated using MATLAB's powerful 5G and LTE toolboxes, showcases our commitment to
 interoperability and our tool-agnostic approach to innovation.
 
 Classification results are comparable to those achieved by MathWorks' custom network, albeit with more learnables. 
@@ -156,7 +156,7 @@ This work is a product of the collaborative efforts of the Qoherent team. Of spe
 
 ## 🙏 Attribution
 
-The dataset used in this example was prepared by MathWorks using their 5G and LTE Toolboxes and is publicly available
+The dataset used in this example was prepared by MathWorks using their 5G and LTE toolboxes and is publicly available
 [here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information on how this dataset was generated or to generate further spectrum data, please refer
 to MathWork's article on spectrum sensing. For more information about Qoherent's use of MATLAB to accelerate 
 intelligent radio research, check out our [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
