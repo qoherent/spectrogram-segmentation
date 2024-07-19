@@ -25,8 +25,7 @@ This example is provided as a Jupyter Notebook. You have the option to either ru
 Colab.
 
 To run this example locally, you'll need to download the project and dataset and set up a Python 
-virtual environment. If this seems daunting, we recommend running this example on Google Colab: 
-[Spectrogram Segmentation]().
+virtual environment. If this seems daunting, we recommend running this example on Google Colab (Coming soon!).
 
 ### Running this example locally
 
