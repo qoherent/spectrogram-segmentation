@@ -27,9 +27,9 @@ def sha256(target: str) -> str:
 
 
 mirror = "https://storage.googleapis.com/qoherent_external_drive/general_dataset_library/"
-resource = "spectrum_sensing_dataset.hdf5"
+resource = "spectrum_sensing_dataset_v1.0.hdf5"
 file_url = "{}{}".format(mirror, resource)
-sha256_checksum = "3cdb2d61370ea9a1123ac1fc37889d81f0845d7f2827833e007008fd883a5369"
+sha256_checksum = "8a93aa14145ea1a35cbc191defbbcf90c49ecdb89e6e93f3e55357f182d184c6"
 
 target = os.path.join(os.path.dirname(os.path.abspath(__file__)), "spectrum_sensing_dataset.hdf5")
 
