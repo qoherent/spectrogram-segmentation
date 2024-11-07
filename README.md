@@ -109,13 +109,13 @@ This will download the `spectrum_sensing_dataset.hdf5` source file to the projec
 
 6. Register the environment kernel with Jupyter:
 ```commandline
-ipython kernel install --user --name=spectrogram-segmentation
+ipython kernel install --user --name=venv --display-name "Spectrogram Segmentation (venv)"
 ```
 
 
-7. Open the notebook, `spectrogram_segmentation.ipynb`, specifying to use the `spectrogram-segmentation` kernel:
+7. Open the notebook, `spectrogram_segmentation.ipynb`, specifying to use the new kernel:
 ```commandline
-jupyter notebook spectrogram_segmentation.ipynb --MultiKernelManager.default_kernel_name=spectrogram-segmentation
+jupyter notebook spectrogram_segmentation.ipynb --MultiKernelManager.default_kernel_name=venv
 ```
 
 
