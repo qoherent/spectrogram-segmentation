@@ -84,7 +84,10 @@ pip install -r requirements.txt
 ```
 
 
-5. Download the spectrum sensing dataset.
+5. Fetch the spectrum sensing dataset.
+
+The original public mirror used by this repository is no longer available. For internal training, fetch the dataset
+from the Dawson machine while connected to the office network or VPN:
 
 <details>
 <summary><strong>Windows</strong></summary>
@@ -104,7 +107,19 @@ python3 download_dataset.py
 
 </details>
 
-This will download the `spectrum_sensing_dataset.hdf5` source file to the project's root directory.
+This copies `qrf@dawson:/home/qrf/SpectrumSensingDataset.hdf5` into the project's root directory and validates the
+file checksum. If you already have a local copy, place it in the project root as `SpectrumSensingDataset.hdf5` and run
+the same command to validate it.
+
+If the Dawson location changes, pass a replacement `scp` source path:
+
+```commandline
+python3 download_dataset.py --source user@host:/path/to/SpectrumSensingDataset.hdf5
+```
+
+The notebook supports both `SpectrumSensingDataset.hdf5` and the older `spectrum_sensing_dataset.hdf5` filename. It
+also supports both the original MathWorks-style HDF5 schema (`Images`, `Masks`, `Metadata/Metadata`) and the older
+Qoherent-converted schema (`data`, `masks`, `metadata/metadata`).
 
 
 6. Register the environment kernel with Jupyter:
@@ -155,9 +170,10 @@ This work is a product of the collaborative efforts of the Qoherent team. Of spe
 
 ## 🙏 Attribution
 
-The dataset used in this example was prepared by MathWorks using their 5G and LTE toolboxes and is publicly available
-[here](https://www.mathworks.com/supportfiles/spc/SpectrumSensing/SpectrumSenseTrainingDataNetwork.tar.gz). For more information on how this dataset was generated or to generate further spectrum data, please refer
-to MathWork's article on spectrum sensing. For more information about Qoherent's use of MATLAB to accelerate 
+The dataset used in this example was prepared by MathWorks using their 5G and LTE toolboxes. This training repository
+expects the internal HDF5 copy from Dawson, as described in the setup instructions above. For more information on how
+the original data was generated or to generate further spectrum data, please refer
+to MathWorks' article on spectrum sensing. For more information about Qoherent's use of MATLAB to accelerate
 intelligent radio research, check out our [customer story](https://www.mathworks.com/company/user_stories/qoherent-uses-matlab-to-accelerate-research-on-next-generation-ai-for-wireless.html).
 
 The DeepLabv3 models used in this example were initially proposed by Chen _et al._ and are further discussed 
